@@ -10,6 +10,9 @@ $ npm install
 $ npm run start
 ```
 
+## POSTMAN FILE 
+https://github.com/SiswoHandoko/boo-parts-2/blob/main/Boo%20API.postman_collection.json
+
 # API EXAMPLE
 Request Get All Comment With Filter and Sorting [GET]:
 ```bash
