@@ -20,14 +20,13 @@ Response Get All Comment With Filter and Sorting:
 ```bash
 [
     {
-        "_id": "65f1ba1e7309d2e509b4cfd2",
+        "id": "65f1bb7830c4537d468cc90c",
         "name": "A Martinez",
         "comments": "I want Elon Musk to be an INTJ more than anyone, but he isn't... People think that Elon has Ni because of his long-term vision for humanity becoming a multi-planetary species, but the way he got to this conclusion is through Ti-Ne - by envisioning all the possibilities and choosing the Ti path the makes the most sense. Elon's mannerisms, jokes, are very based on Ne. He has so much Ne that I even considered ENTP, but INTP is the most likely choice; watch the video if you're still not convinced.",
         "mbti": "ISFJ",
         "enneagram": "1w2",
         "zodiac": "Aries",
-        "likes": 2,
-        "__v": 0
+        "likes": 2
     }
 ]
 ```

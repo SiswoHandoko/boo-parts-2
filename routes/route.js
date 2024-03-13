@@ -81,7 +81,18 @@ module.exports = function () {
         comments = comments.filter(comment => comment.zodiac === zodiacFilter);
       }
   
-      res.json(comments);
+      // Transform the documents: Change _id to id and remove __v
+      const transformedComments = comments.map(comment => ({
+        id: comment._id, // Change _id to id
+        name: comment.name,
+        comments: comment.comments,
+        mbti: comment.mbti,
+        enneagram: comment.enneagram,
+        zodiac: comment.zodiac,
+        likes: comment.likes
+      }));
+
+      res.json(transformedComments);
     } catch (err) {
       console.error(err);
       res.status(500).json({ message: 'Failed to retrieve comments' });
