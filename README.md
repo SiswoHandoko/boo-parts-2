@@ -7,7 +7,13 @@ $ npm install
 ## Running the app (http://localhost:3001/comments)
 
 ```bash
-$ npm run start
+$ node app.js
+```
+
+## Automated Testing 
+Please do this after you run the app.js for do test all scenario
+```bash
+$ node test.js
 ```
 
 ## POSTMAN FILE 
