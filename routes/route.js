@@ -17,6 +17,7 @@ const CommentModel = mongoose.model('Comment', commentModelSchema);
 
 // Init Data for comments with ID 1
 const comments = [{
+  "_id": "65f2586a8d5c32a4d4a21c55",
   "name": "A Martinez",
   "comments": `I want Elon Musk to be an INTJ more than anyone, but he isn't... People think that Elon has Ni because of his long-term vision for humanity becoming a multi-planetary species, but the way he got to this conclusion is through Ti-Ne - by envisioning all the possibilities and choosing the Ti path the makes the most sense. Elon's mannerisms, jokes, are very based on Ne. He has so much Ne that I even considered ENTP, but INTP is the most likely choice; watch the video if you're still not convinced.`,
   "mbti": "ISFJ",
@@ -25,6 +26,7 @@ const comments = [{
   "likes": 2,
 },
 {
+  "_id": "65f2586a8d5c32a4d4a21c56",
   "name": "Marquez",
   "comments": `I want Elon Musk to be an INTJ more than anyone, but he isn't... People think that Elon has Ni because of his long-term vision for humanity becoming a multi-planetary species, but the way he got to this conclusion is through Ti-Ne - by envisioning all the possibilities and choosing the Ti path the makes the most sense. Elon's mannerisms, jokes, are very based on Ne. He has so much Ne that I even considered ENTP, but INTP is the most likely choice; watch the video if you're still not convinced.`,
   "mbti": "ISFJ",
@@ -33,6 +35,7 @@ const comments = [{
   "likes": 1
 },
 {
+  "_id": "65f2586a8d5c32a4d4a21c57",
   "name": "Channiaz",
   "comments": `I want Elon Musk to be an INTJ more than anyone, but he isn't... People think that Elon has Ni because of his long-term vision for humanity becoming a multi-planetary species, but the way he got to this conclusion is through Ti-Ne - by envisioning all the possibilities and choosing the Ti path the makes the most sense. Elon's mannerisms, jokes, are very based on Ne. He has so much Ne that I even considered ENTP, but INTP is the most likely choice; watch the video if you're still not convinced.`,
   "mbti": "ESTP",
@@ -71,13 +74,13 @@ module.exports = function () {
       }
 
       // Apply filters dynamically
-      if (mbtiFilter !== undefined) {
+      if (mbtiFilter !== undefined && mbtiFilter !== '' ) {
         comments = comments.filter(comment => comment.mbti === mbtiFilter);
       }
-      if (enneagramFilter !== undefined) {
+      if (enneagramFilter !== undefined && enneagramFilter !== '') {
         comments = comments.filter(comment => comment.enneagram === enneagramFilter);
       }
-      if (zodiacFilter !== undefined) {
+      if (zodiacFilter !== undefined && zodiacFilter !== '') {
         comments = comments.filter(comment => comment.zodiac === zodiacFilter);
       }
   
